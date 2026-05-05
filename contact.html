@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc des Expositions - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="logoexpobox2.png" alt="Logo Parc des Expositions">
+        </a>
+    </div>
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="gestion_equipements.html">Gestion équipements</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html" class="actif">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+
+<h1 class="titre-gestion">FORMULAIRE DE CONTACT</h1>
+
+<div class="formulaire-equipement">
+    <form>
+
+        <div class="champ">
+            <label for="nom">Nom Complet *</label>
+            <input type="text" id="nom" name="nom_complet" required>
+        </div>
+
+        <div class="champ">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom">
+        </div>
+
+        <div class="champ">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="champ">
+            <label for="tel">Téléphone *</label>
+            <input type="tel" id="tel" name="telephone" required>
+        </div>
+
+        <div class="champ-message">
+            <label for="message">Message (1000 caractères max) *</label>
+            <textarea id="message" name="message" maxlength="1000" rows="8" required></textarea>
+        </div>
+
+        <div class="boutons">
+            <button type="submit">ENVOYER</button>
+        </div>
+
+        <p class="champ-obligatoire">* Champ obligatoire</p>
+
+    </form>
+</div>
+
+</body>
+</html>

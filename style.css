@@ -1,0 +1,303 @@
+body {
+    background-color: #f6f6ec;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Le haut de page */
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f6f6ec;
+}
+
+/* pr le logo */
+.logo img {
+    height: 90px;
+    display: block;
+    margin-left: 1px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Style pour le menu */
+.nav-menu {
+    margin-left: 1px;
+}
+
+/* bleu des onglets */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #59bde3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* onglet 1 */
+.nav-links li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+/* Effet onglet 1 */
+.nav-links li a:hover {
+    background-color: #003d80;
+}
+
+/* Style du H1 */
+.titre-contact {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+/* Centre pour le formulaire */
+.conteneur-formulaire {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* champs de saisie */
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contact input,
+.form-contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style du bouton */
+.btn-envoyer {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-envoyer:hover {
+    background-color: #003d80;
+}
+
+.actif {
+    background-color: #e87722;
+}
+
+.titre-gestion {
+    text-align: center;
+    color: #e87722;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.formulaire-equipement {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.champ {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.champ label {
+    width: 220px;
+    font-weight: bold;
+}
+
+.champ input {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #999;
+    font-size: 15px;
+}
+
+.type-equipement {
+    margin-bottom: 20px;
+}
+
+.type-equipement p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.type-equipement label {
+    margin-right: 25px;
+}
+
+.boutons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.boutons button {
+    padding: 8px 18px;
+    border: 1px solid #333;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boutons button:hover {
+    background-color: #e0e0e0;
+}
+
+.champ-message {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.champ-message label {
+    font-weight: bold;
+}
+
+.champ-message textarea {
+    padding: 8px;
+    border: 1px solid #999;
+    font-size: 15px;
+    resize: vertical;
+}
+
+.champ-obligatoire {
+    color: #e87722;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.formulaire-location {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.ligne-location {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 15px 0;
+}
+
+.ligne-location .gauche {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.ligne-location .droite {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.ligne-location label {
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.ligne-location select,
+.ligne-location input[type="number"] {
+    padding: 5px;
+    border: 1px solid #999;
+    font-size: 15px;
+}
+
+.separateur {
+    border: none;
+    border-top: 2px solid #003d80;
+    margin: 5px 0;
+}
+
+.bouton-valider {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.bouton-valider button {
+    padding: 8px 20px;
+    background-color: white;
+    border: 1px solid #e87722;
+    color: #e87722;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.bouton-valider button:hover {
+    background-color: #e87722;
+    color: white;
+}
+
+.photo-equipe {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.photo-equipe img {
+    width: 100%;
+    height: auto;
+}
+
+.partenaires {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px auto;
+    max-width: 700px;
+}
+
+.partenaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.partenaire a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #003d80;
+    text-decoration: none;
+}
+
+.partenaire a:hover {
+    text-decoration: underline;
+}
+
+.partenaire img {
+    width: 180px;
+    height: auto;
+}

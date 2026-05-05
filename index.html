@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc des Expositions - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <a href="index.html" id="logo-link">
+            <img src="logoexpobox2.png" alt="Logo Parc des Expositions" id="logo-img">
+        </a>
+    </div>
+
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="index.html" class="actif">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="gestion_equipements.html">Gestion équipements</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+<div class="contenu">
+    <h1>Bienvenue sur le site de Expobox.</h1>
+    <h2>Votre partenaire de choix pour vos expositions.</h2>
+</div>
+<div class="hero-image">
+    <img src="./parc-expositions.jpg" alt="Parc des Expositions de Caen" style="width: 1900px; height: auto;">
+</div>
+
+<script>
+    let rotation = 0;
+    const logoImg = document.getElementById('logo-img');
+    const logoLink = document.getElementById('logo-link');
+
+    logoLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        rotation += 360;
+        logoImg.style.transform = 'rotate(' + rotation + 'deg)';
+    });
+</script>
+
+
+

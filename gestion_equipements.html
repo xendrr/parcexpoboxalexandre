@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc des Expositions - Gestion des équipements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="logoexpobox2.png" alt="Logo Parc des Expositions">
+        </a>
+    </div>
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="gestion_equipements.html" class="actif">Gestion équipements</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+
+<h1 class="titre-gestion">GESTION DES ÉQUIPEMENTS</h1>
+
+<div class="formulaire-equipement">
+    <form>
+
+        <div class="champ">
+            <label for="nom">Nom équipement *</label>
+            <input type="text" id="nom" name="nom">
+        </div>
+
+        <div class="champ">
+            <label for="designation">Désignation équipement *</label>
+            <input type="text" id="designation" name="designation">
+        </div>
+
+        <div class="champ">
+            <label for="quantite">Quantité</label>
+            <input type="text" id="quantite" name="quantite">
+        </div>
+
+        <div class="champ">
+            <label for="cout">Coût / Jour *</label>
+            <input type="text" id="cout" name="cout">
+        </div>
+
+        <div class="type-equipement">
+            <p>Type de l'équipement</p>
+            <label><input type="radio" name="type" value="numerique" checked> Numérique</label>
+            <label><input type="radio" name="type" value="mobilier"> Mobilier</label>
+            <label><input type="radio" name="type" value="decoration"> Décoration</label>
+        </div>
+
+        <div class="boutons">
+            <button type="button">RECHERCHER</button>
+            <button type="submit">AJOUTER</button>
+            <button type="button">MODIFIER</button>
+        </div>
+
+        <p class="champ-obligatoire">* Champ obligatoire</p>
+
+    </form>
+</div>
+
+</body>
+</html>

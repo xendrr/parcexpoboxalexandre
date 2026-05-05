@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parc des Expositions - Location</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="logoexpobox2.png" alt="Logo Parc des Expositions">
+        </a>
+    </div>
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="gestion_equipements.html">Gestion équipements</a></li>
+            <li><a href="location.html" class="actif">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+
+<h1 class="titre-gestion">RESERVATION EQUIPEMENT - BOX</h1>
+
+<div class="formulaire-location">
+    <form>
+
+        <div class="ligne-location">
+            <div class="gauche">
+                <label for="box">Box *</label>
+                <select id="box" name="box">
+                    <option value="">nom du box</option>
+                    <option value="box1">Box 1</option>
+                    <option value="box2">Box 2</option>
+                    <option value="box3">Box 3</option>
+                </select>
+            </div>
+            <div class="droite">
+                <label for="duree-box">Durée / jour</label>
+                <select id="duree-box" name="duree-box">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+        </div>
+
+        <hr class="separateur">
+
+        <div class="ligne-location">
+            <div class="gauche">
+                <label for="equipement">Equipement</label>
+                <select id="equipement" name="equipement">
+                    <option value="">Nom équipement</option>
+                </select>
+            </div>
+            <div class="droite">
+                <label for="duree-equip">Durée / jour</label>
+                <select id="duree-equip" name="duree-equip">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="ligne-location">
+            <div class="gauche">
+                <label for="quantite">Quantite</label>
+                <input type="number" id="quantite" name="quantite" min="1" max="10">
+            </div>
+        </div>
+
+        <hr class="separateur">
+
+        <div class="ligne-location">
+            <div class="gauche">
+                <label for="client">Client *</label>
+                <select id="client" name="client">
+                    <option value="">Nom client</option>
+                </select>
+            </div>
+            <div class="droite">
+                <label>Type client :</label>
+            </div>
+        </div>
+
+        <div class="bouton-valider">
+            <button type="submit">Valider la réservation</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
